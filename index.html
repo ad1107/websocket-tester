@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Tester</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="center">WebSocket Tester</h1>
+    <input type="text" id="wsUrlInput" placeholder="WebSocket URL (e.g., ws://localhost:24050/ws)">
+    <button id="connectBtn">Connect</button>
+    <button id="disconnectBtn" disabled>Disconnect</button>
+    <div id="status">Disconnected</div>
+
+    <h2 class="center">Add Data Point</h2>
+    <div class="center">
+      <input type="text" id="dataPointInput" placeholder="Search and select data point">
+      <select id="dataPointDropdown" size="5"></select>
+      <button id="addDataPointBtn">Add</button>
+    </div>
+
+    <h2>Selected Data Points</h2>
+    <table id="selectedDataTable">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Data Point</th>
+          <th>Value</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="selectedData">
+        <!-- Display selected data points here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
